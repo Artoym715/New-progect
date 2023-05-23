@@ -20,7 +20,17 @@
 </head>
 
 <body>
-
+	<!-- scroll-up  -->
+	<div class="scroll-up">
+		<svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+			<path class="scroll-up__svg-path" d="
+	M24,0
+	a24,24 0 0,1 0,48
+	a24,24 0 0,1 0,-48
+	" />
+		</svg>
+	</div>
+	<!-- scroll-up  -->
 
 	<header>
 		<nav class="navbar navbar-expand-lg bg-light">
@@ -110,6 +120,8 @@
 					<img src="img/Before.png" alt="before" />
 					<img src="img/After.png" alt="after" />
 				</div>
+				<p class="text-center">Потяните ползунок вправо или влево из центра или кликнете по картинке справа или
+					слево</p>
 			</div>
 		</div>
 		<div class="row mt-3">
@@ -146,9 +158,13 @@
 	<script src="/lib/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
 	<!-- Load Cocoen library -->
 	<script src="/lib/cocoen-3.2.0/dist/cocoen.js"></script>
+	<!-- Load Cocoen library -->
+	<!-- Activate Cocoen -->
 	<script>
 		Cocoen.create(document.querySelector('.cocoen'));
 	</script>
+	<!-- Activate Cocoen -->
+	<script src="/js/scroll-up.js"></script>
 </body>
 
 </html>
