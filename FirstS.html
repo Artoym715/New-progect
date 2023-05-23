@@ -25,7 +25,7 @@
 	<header>
 		<nav class="navbar navbar-expand-lg bg-light">
 			<div class="container">
-				<img src="img/Grizly3.svg" class="logo" width="150px" height="50px" alt="Logo">
+				<img src="img/Grizly4.svg" class="logo" width="50px" height="50px" alt="Logo">
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
 					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -68,7 +68,7 @@
 					alt="Скриншот панели разработчика что сайт работает по https">
 			</div>
 		</div>
-		<div class="row">
+		<div class="row mt-3">
 			<div class="col-12 col-md-12">
 				<h4>2. Структура сайта</h4>
 				<hr />
@@ -96,25 +96,33 @@
 					<p>Изменение были проделаны в шапке сайта! Для отображение изменений был использован плагин До/После - <a
 							href="https://github.com/koenoe/cocoen">Cocoen</a>.</p>
 					<ul>
-						<li>Опреде.</li>
-						<li>Проанализируйте структуру страницы сайта. Найдите и покажите в коде хедер, футер и контент.</li>
-						<li>Внесите не менее 2 изменений на страницу с помощью инструмента разработчика и представьте
-							скриншоты
-							было/стало.</li>
-						<li>Создайте прототип низкой детализации (дополнительное задание, если на семинаре дошли до задания
-							№8).
+						<li>Передлан главный заголовок в слайдере картинок.</li>
+						<li>Удален блок с социальными кнопками.</li>
+						<li>В меню удален раздел Статьи.</li>
+						<li>В самом меню изменен порядок разделов с конца в начало.</li>
+						<li>Удалена форма поиска.</li>
 						</li>
 					</ul>
 				</div>
 			</div>
+			<div class="col-12 col-md-12">
+				<div class="cocoen">
+					<img src="img/Before.png" alt="before" />
+					<img src="img/After.png" alt="after" />
+				</div>
+			</div>
 		</div>
-
+		<div class="row mt-3">
+			<div class="col-12 col-md-12">
+				<h4>4.Прототип низкой детализации</h4>
+			</div>
+		</div>
 	</main>
 	<footer class="container footer">
 		<div class="row">
 			<div class="col-6">
 				<div class="logo">
-					<img src="./img/Grizly3.svg" width="200px" height="100%" alt="logo">
+					<img src="./img/Grizly4.svg" width="50px" height="50px" alt="logo">
 				</div>
 			</div>
 			<div class="col-6">
@@ -132,6 +140,9 @@
 	<script src="/lib/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
 	<!-- Load Cocoen library -->
 	<script src="/lib/cocoen-3.2.0/dist/cocoen.js"></script>
+	<script>
+		Cocoen.create(document.querySelector('.cocoen'));
+	</script>
 </body>
 
 </html>
